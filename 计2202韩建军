@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int x,a;
+std::cout<<"所输入的数字:";
+std::cin>>x;
+{
+int left=1,right=x;
+//利用二分查找法，先确定粗略的上界和下界
+  while(left<=right){
+int mid=left+(right-left)/2;
+  if(mid<=x/mid) {left=mid+1;a=mid;
+}
+  else{right=mid-1;
+//取中间值的平方与x相比较，后使其中一个边界不断移动，
+//使a越来越接近正确值，直至条件不再满足，得到"="时的正确结果。
+}
+
+}
+
+}
+std::cout<<"答案是:"<<a<<std::endl;
+
+return 0;
+}
